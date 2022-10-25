@@ -1,0 +1,15 @@
+body {
+    background:  #0e0d0d;
+}
+.Enterprises-logo {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.Head-Name-Logo {
+    margin-top: 6px;
+    color: rgb(241, 255, 255);
+    text-align: center;
+    font-size: 22px;
+    font-family: monospace;
+}
