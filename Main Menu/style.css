@@ -8,33 +8,29 @@ body {
     display: block;
     margin: auto;
 }
-.Head-Name-Logo {
-    margin-top: 6px;
-    color: rgb(241, 255, 255);
-    text-align: center;
-    font-size: 22px;
-    font-family: monospace;
-}
 .Card-Main {
     background: #1a1919;
-    width: 50vw;
-    height: 50vh;
+    width: 520px;
+    height: 290px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
+    margin-top: 10px;
     border-radius: 20px;
     box-shadow: 0px 12px 30px;
 }
 .Card-Main > h1 {
     color: azure;
     font-size: 40px;
-    padding-top: 5px;
+    box-sizing: border-box;
 }
 .Card-Main > p {
     color: azure;
     font-family: Open Sans;
-    font-size: 20px;
+    font-size: 17px;
+    text-align: center;
     display: flex;
+    box-sizing: border-box;
 }
