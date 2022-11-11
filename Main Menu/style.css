@@ -4,35 +4,53 @@ body {
     margin: 0px;
     background:  #0e0d0d;
 }
+.Enterprise-logo {
+    width: 100px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 22px;
+}
+.icon-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: -65px;
+    margin-right: 10px;
+}
+.navbar {
+    width: 40px;
+}
 .Login-Btns{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
     padding: 5px 10px;
-    margin-top: -70px;
-    margin-bottom: 20px;
-}
-.Enterprise-logo {
-    width: 100px;
-    display: block;
-    align-items: center;
-    margin: auto;
-    padding-bottom: 10px;
+    margin-top: -45px;
+    margin-bottom: 5px;
+    margin-right: 50px;
 }
 .signin-btn {
     background: #0beeaa;
     padding: 12px 40px;
-    margin-right: 7px;
     cursor: pointer;
     border: none;
     border-radius: 20px;
+    box-shadow: 0px 2px 60px #0beeaa8a;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-right: 7px;
 }
 .signup-btn {
     padding: 12px 40px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 0px 2px 60px #ffffff8a;
+    font-weight: 700;
+    box-sizing: border-box;
 }
 .Card-Main {
     background: #1a1919;
@@ -48,12 +66,13 @@ body {
     box-shadow: 0px 12px 30px;
 }
 .Card-Main > h1 {
-    color: azure;
+    color: #0beeaa;
     font-size: 40px;
     box-sizing: border-box;
 }
 .Card-Main > p {
     color: azure;
+    font-weight: 700;
     font-family: Open Sans;
     font-size: 17px;
     text-align: center;
