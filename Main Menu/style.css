@@ -18,6 +18,7 @@ body {
     align-items: flex-end;
     margin-top: -65px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .navbar {
     width: 40px;
