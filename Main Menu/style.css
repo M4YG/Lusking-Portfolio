@@ -4,16 +4,90 @@ body {
     margin: 0px;
     background:  #0e0d0d;
 }
+/* Topo do Site */
 .Enterprise-logo {
     width: 100px;
     display: block;
     align-items: center;
-    padding-top: 5px;
+    margin-top: 10px;
     margin: auto;
     margin-bottom: 3px;
 }
 .Nav-bars {
-    
+    margin-top: -80px;
+    height: 50px;
+    width: 100%;
+}
+.Nav-bars > a > .home-icon {
+    width: 40px;
+    margin-top: -5px;
+    padding-left: 25px;
+    position: absolute;
+}
+.Nav-bars > a > .home-icon:hover {
+    background-image: url(home-white.png);
+    width: 42.5px;
+    margin-top: -8px;
+    position: absolute;
+    transition: 10ms linear;
+    transition-duration: 0.1s;
+}
+.Search-Box {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.Search-Box > button {
+    border: none;
+    border-radius: 18px;
+    outline: none;
+    background: #c9c9c9;
+    height: 35px;
+    width: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.Search-Box > button:hover {
+    background-color: #ffffff;
+    margin-top: -2px;
+    height: 37px;
+    width: 40px;
+    transition: 1000ms linear;
+    transition-duration: 0.1s;
+}
+.Search-Box > button > .search-logo {
+    width: 20px;
+    align-items: center;
+}
+.Search-Box > button > .search-logo {
+    margin-top: 1px;
+}
+.Search-Box > input {
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    height: 30px;
+    width: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    color: #0e0d0d;
+    font-size: 14px;
+}
+.Search-Box > input:hover {
+    height: 30px;
+    width: 220px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    transition: 500ms linear;
+}
+.Search-Box > input::placeholder {
+    justify-items: flex-start;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e0d0d1e;
 }
 .Login-Btns{
     display: flex;
@@ -21,9 +95,9 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     padding: 5px 10px;
-    margin-top: -55px;
+    margin-top: -38px;
     margin-bottom: 5px;
-    margin-right: 50px;
+    margin-right: 30px;
 }
 .signin-btn {
     background: #0beeaa;
@@ -31,17 +105,114 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 20px;
-    box-shadow: 0px 2px 60px #0beeaa8a;
-    font-weight: 700;
+    box-shadow: 0px 3px 40px #0beeaa2a;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
     box-sizing: border-box;
-    margin-right: 7px;
+    margin-right: 20px;
 }
+.signin-btn:hover {
+    background: #00ffb3;
+    box-shadow: 1px 2px 25px #00ffb385;
+    padding: 15px 45px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition-delay: 50ms;
+    transition-duration: 0.4s;
+}
+
 .signup-btn {
-    padding: 12px 40px;
+    padding: 12px 35px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0px 2px 60px #ffffff8a;
-    font-weight: 700;
+    box-shadow: 0px 3px 40px #ffffff2f;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
     box-sizing: border-box;
 }
+.signup-btn:hover {
+    background: #620bee;
+    color: #ffffff;
+    box-shadow: 1px 2px 25px #741dffcc;
+    padding: 14px 37px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    transition-delay: 50ms linear;
+    transition-duration: 0.4s;
+    
+}
+/* Fim do Topo */
+
+/* Login */
+.Login-Card > .Left-Login {
+    color: #00ffb3;
+}
+.Login-Card > .Main-Login {
+    background-color: #00ffb3;
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+}
+.Login-Card > .Main-Login > h2 {
+    text-align: center;
+    font-size: 25pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.Login-Card > .Main-Login > label {
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-right: 300px;
+    position: relative;
+}
+.Login-Card > .Main-Login > input {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 25px;
+    width: 350px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 8px;
+}
+.Login-Card > .Main-Login > .Login-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 14pt;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Login-Card > .Main-Login > .Login-button:hover {
+    background-color: #620bee;
+    box-shadow: 0px 5px 40px #a620ffc5;
+    color: #ffffff;
+    font-size: 14pt;
+    padding: 16px 44px;
+    border-radius: 24px;
+    transition: 1000ms linear;
+    transition-duration: 0.1s;
+}
+
+/* Fim do Login */
