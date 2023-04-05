@@ -9,10 +9,12 @@ body {
     width: 100px;
     display: block;
     align-items: center;
-    margin-top: 10px;
     margin: auto;
-    margin-bottom: 3px;
+    margin-top: 2.5px;
+    margin-bottom: 0px;
 }
+
+/* NavBar */
 .Nav-bars {
     margin-top: -80px;
     height: 50px;
@@ -32,6 +34,8 @@ body {
     transition: 10ms linear;
     transition-duration: 0.1s;
 }
+
+/* Caixa e Botões de Pesquisa */
 .Search-Box {
     display: flex;
     align-items: center;
@@ -54,7 +58,7 @@ body {
     height: 37px;
     width: 40px;
     transition: 1000ms linear;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
 }
 .Search-Box > button > .search-logo {
     width: 20px;
@@ -88,6 +92,9 @@ body {
     letter-spacing: 1px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #0e0d0d1e;
+
+/* Botões de Login*/
+
 }
 .Login-Btns{
     display: flex;
@@ -191,7 +198,7 @@ body {
     outline: none;
     margin-bottom: 8px;
 }
-.Login-Card > .Main-Login > .Login-button {
+.Login-Card .Main-Login .Login-button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,7 +211,7 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
-.Login-Card > .Main-Login > .Login-button:hover {
+.Login-Card .Main-Login .Login-button:hover {
     background-color: #620bee;
     box-shadow: 0px 5px 40px #a620ffc5;
     color: #ffffff;
@@ -216,3 +223,58 @@ body {
 }
 
 /* Fim do Login */
+
+/* Tela De Início */
+
+@font-face {
+    font-family: Suite;
+    src: url(../Main\ Menu/Fonts/SuitePersonalUse.ttf);
+}
+
+.Site .Top-Web h1 {
+    font-family: Suite;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 35pt;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+/* Aba dos Criadores */
+
+@font-face {
+    font-family: Phantom Storm;
+    src: url(../Main\ Menu/Fonts/phantomstorm.ttf);
+}
+
+.Criadores label {
+    font-family: Phantom Storm;
+    color: #08eea1;
+    font-weight: bold;
+    font-size: 25pt;
+    text-align: center;
+    padding: 48px;
+    margin-left: 425px;
+}
+
+.Criadores img {
+    margin-top: 25px;
+    margin-left: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.Criadores .Yagami {
+    width: 245px;
+    border: none;
+    border-radius: 45px;
+}
+
+.Criadores .Marcs05 {
+    width: 250px;
+    border: none;
+    border-radius: 45px;
+}
+
+/* Tela De Final */
