@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +11,7 @@
    </head>
    <body>
    <!-- Logo Da Empresa -->
-    <div class="top-logo">
+    <div class="Top-logo">
      <img class="Enterprise-logo" src="logo_empresa.png">
     </div>
     <!-- Nav Bar -->
@@ -29,16 +28,19 @@
    </div>
    <!-- Login - Entrar -->
    <div class="Login-Card">
-    <div class="Left-Login">
+    <div class="Top-Login">
       <h1>Faça Login para acessar novamente sua conta</h1>
+      <br>
     </div>
     <div class="Main-Login">
-      <h2> Login </h2>
-      <label class="user-word"> Usuário </label>
-      <input type="text">
-      <label class="password-word"> Senha </label>
-      <input type="password">
-      <button class="Login-button"> Entrar </button>
+      <form action="dadoslogin.php" method="post">
+      <h2>Login</h2>
+      <label class="user-word">Usuário:</label>
+      <input type="text" name="user_name" placeholder="Nome de Usuário">
+      <label class="password-word">Senha:</label>
+      <input type="password" name="user_password" placeholder="Senha">
+      <input class="Send-button" type="submit" value="Enviar">
+    </form>
     </div>
     <div class="Right-Login"></div>
    </div>

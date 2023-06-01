@@ -5,7 +5,7 @@ body {
     background:  #0e0d0d;
 }
 /* Topo do Site */
-.Enterprise-logo {
+.Top-logo .Enterprise-logo {
     width: 100px;
     display: block;
     align-items: center;
@@ -155,13 +155,27 @@ body {
 /* Fim do Topo */
 
 /* Login */
-.Login-Card > .Left-Login {
-    color: #00ffb3;
+@font-face {
+    font-family: Dalek Pinpoint;
+    src: url(../Main\ Menu/Fonts/DalekPinpointBold.ttf);
 }
-.Login-Card > .Main-Login {
+@font-face {
+    font-family: Modern Age;
+    src: url(../Main\ Menu/Fonts/ModernAge.ttf);
+}
+.Login-Card .Top-Login {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 10pt;
+    text-align: center;
+    color: #00ffb3;
+    font-family: Modern Age;
+}
+.Login-Card .Main-Login {
     background-color: #00ffb3;
-    width: 550px;
-    height: 550px;
+    box-shadow: 0px 10px 40px #00ffb370;
+    width: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,56 +184,70 @@ body {
     border: none;
     border-radius: 20px;
 }
-.Login-Card > .Main-Login > h2 {
+.Login-Card .Main-Login h2 {
+    font-family: Dalek Pinpoint;
     text-align: center;
-    font-size: 25pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 2px;
+    font-size: 22pt;
+    margin-top: -10px;
+    padding-bottom: 5px;
+    letter-spacing: 5px;
 }
-.Login-Card > .Main-Login > label {
-    font-size: 22px;
-    font-weight: 700;
+.Login-Card .Main-Login label {
+    font-size: 13pt;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
     padding-top: 5px;
-    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
     padding-right: 300px;
     position: relative;
+    font-family: Modern Age;
 }
-.Login-Card > .Main-Login > input {
+.Login-Card .Main-Login input {
     display: flex;
     align-items: center;
     justify-items: center;
-    height: 25px;
-    width: 350px;
+    height: 30px;
+    width: 300px;
+    padding-left: 8px;   
+    font-size: 11pt;
+    margin-left: 50px;
     position: relative;
     border: none;
     border-radius: 10px;
     outline: none;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
-.Login-Card .Main-Login .Login-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 12px 40px;
-    font-size: 14pt;
+.Login-Card .Main-Login input::placeholder {
+    font-size: 10pt;
+    color: #00000041;
+}
+.Login-Card .Main-Login .Send-button {
+    margin-top: 30px;
+    margin-left: 90px;
+    font-size: 12pt;
     font-weight: bold;
     background-color: #ffffff;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    height: 50px;
+    width: 220px;
+    display: block;
+    align-content: center;
+    text-align: center;
 }
-.Login-Card .Main-Login .Login-button:hover {
-    background-color: #620bee;
-    box-shadow: 0px 5px 40px #a620ffc5;
+.Login-Card .Main-Login .Send-button:hover {
+    background-color: #5a0bee;
+    box-shadow: 0px 5px 40px #5b20ff88;
     color: #ffffff;
-    font-size: 14pt;
-    padding: 16px 44px;
+    font-size: 12pt;
+    height: 55px;
+    width: 225px;
     border-radius: 24px;
-    transition: 1000ms linear;
-    transition-duration: 0.1s;
+    transition: 1100ms linear;
+    transition-duration: 0.2s;
 }
 
 /* Fim do Login */
@@ -247,6 +275,14 @@ body {
     font-family: Phantom Storm;
     src: url(../Main\ Menu/Fonts/phantomstorm.ttf);
 }
+.Criadores {
+    display: flex;
+    justify-content: center;
+}
+.Criadores h1 {
+    font-family: Phantom Storm;
+    color: #f7f7f7;
+}
 
 .Criadores label {
     font-family: Phantom Storm;
@@ -259,22 +295,69 @@ body {
 }
 
 .Criadores img {
-    margin-top: 25px;
-    margin-left: 450px;
+    width: 275px;
+    padding-top: 5px;
+    padding-left: 20px;
     text-align: center;
     position: relative;
 }
 
-.Criadores .Yagami {
-    width: 245px;
-    border: none;
-    border-radius: 45px;
+.Criadores_Texto {
+    margin-top: -50px;
+    margin-left: -80px;
+    text-align: center;
 }
 
-.Criadores .Marcs05 {
-    width: 250px;
-    border: none;
-    border-radius: 45px;
+.Criadores_Texto .label-criadores {
+    font-family: Phantom Storm;
+    font-size: 25pt;
+    padding-left: 117px;
+    color: #08eea1;
+}
+/* Fim Aba Criadores */
+
+/* Início Aba Sobre */
+
+.About-Session {
+    height: 80vh;
+    width: 100%;
+    margin-top: 200px;
+    padding-bottom: -250px;
+    background-color: #ffffff04;
+}
+.About-Session h1 {
+    font-size: 30pt;
+    color: #08eea1;
+    padding-top: 80px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: Modern Age;
+}
+.About-Session .About-labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-/* Tela De Final */
+.About-Session .About-labels label{
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    padding-top: 80px;
+    margin-left: 80px;
+    text-align: center;
+    font-family: Modern Age;
+}
+.About-Session .About-labels label a {
+    text-decoration: none;
+    color: inherit;
+}
+.About-logo .Enterprise-logo {
+    width: 70px;
+    display: block;
+    align-items: center;
+    margin: auto;
+    opacity: 7%;
+    margin-top: 180px;
+    margin-bottom: 0px;
+}
