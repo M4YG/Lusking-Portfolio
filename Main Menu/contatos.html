@@ -10,7 +10,7 @@
   <script src="script.js"> </script>
  </head>
  <body>
-   <div class="Nav-bars">
+  <div class="Nav-bars">
     <a href="index.html"> <img class="home-icon" src="home.png" alt="home_icon"></a>
     <div class="Search-Box">
       <button href="#"><img class="search-logo" src="search.png"></button>
@@ -22,9 +22,34 @@
 
     <div class="Site">
       <div class="Top-Web">
-        <h1> Seja Bem-Vindo ao nosso Site! </h1>
+        <h1> Entre em Contato </h1>
       </div>
-        
+
+    <div class="Formulário-Contato">
+        <form action="mensagens_contatos.php" method="post">
+            <label> Nome: </label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label> E-mail: </label>
+            <input type="text" name="email" id="email">
+            <br>
+            <label class="mensagem-label"> Mensagem: </label>
+            <textarea name="mensagem_contato" id="mensagem_contato" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <input class="checkbox" type="checkbox" name="check-value">
+            <label class="checkbox_label">Concordo com os termos a seguir.</label>
+            <label class="terms_click-here">
+                <a href="https://github.com/M4YG/M4YG.github.io"> Clique aqui</a>
+            </label>
+            <br>
+            <input class="Send-button" type="submit" value="Enviar">
+        </form>
+    </div>
+
         <div class="About-Session">
           <h1>Sobre</h1>
           <br>
